@@ -15,8 +15,8 @@ const CardWithSideImg = ({title, text, btnText, img, lgImg, btnBg, reverse, lgre
           </Flex>
         </Container>
       </Bg>
-      <MyImage display="block" lgdisplay="none" style={{flexBasis:"50%"}} src={img} alt="..." width={100} height={0}/>
-      <MyImage display="none" lgdisplay="block" style={{flexBasis:"50%"}} src={lgImg} alt="..." width={100} height={0}/>
+      <MyImage display="block" lgdisplay="none" style={{flexBasis:"50%"}} src={img} alt="..." width={100} height={0} quality={100}/>
+      <MyImage display="none" lgdisplay="block" style={{flexBasis:"50%"}} src={lgImg} alt="..." width={100} height={0} quality={100}/>
     </Flex>
   )
 }

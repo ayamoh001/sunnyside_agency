@@ -5,8 +5,8 @@ const Col = ({img, lgImg, title, text}) => {
   return (
     <Container width="100%" lgwidth="50%">
       <Relative>
-          <MyImage display="block" lgdisplay="none" src={img} alt="..." width={100} height={0}/>
-          <MyImage display="none" lgdisplay="block" src={lgImg} alt="..." width={100} height={0}/>
+          <MyImage display="block" lgdisplay="none" src={img} alt="..." width={100} height={0} quality={100}/>
+          <MyImage display="none" lgdisplay="block" src={lgImg} alt="..." width={100} height={0} quality={100}/>
           <FlowContent height="auto" bottom="0" >
               <Container padding="3rem 1.5rem" lgpadding="4vw 14vw">
                 <Hn as="h3" size="1.5rem"
