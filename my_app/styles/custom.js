@@ -19,6 +19,7 @@ export const Bars = styled.button`
 export const StyledBtn = styled.button`
     background: none;
     border: none;
+    cursor: pointer;
     border-radius: 100vmax;
     position: relative;
     width: fit-content;
@@ -52,6 +53,7 @@ export const ContactBtn = styled.button`
     background-color: var(--clr-yellow);
     border: none;
     border-radius: 100vmax;
+    cursor: pointer;
     padding: 1rem 2rem;
     font-size: 1rem;
     font-family: var(--ff-fraunces);
