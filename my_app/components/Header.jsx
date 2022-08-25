@@ -46,7 +46,7 @@ const Header = () => {
                         <Container margin="auto" padding="0 0 20vw 0" lgpadding="8vw 0 0 0">
                           <Flex align="center" justify="center" gap="1.75rem" lggap="5vw">
                             <Hn as="h1" size="clamp(2rem, 12vw, 3rem)" lgsize="3.5rem" color="white" font="Fraunces" letterSpacing=".25rem">WE ARE CREATIVES</Hn>
-                            <MyImage src="/images/icon-arrow-down.svg" alt="..." mywidth="clamp(1.75rem, 10vw, 2rem)" myheight="auto" width={10} height={100}/>
+                            <MyImage src="/images/icon-arrow-down.svg" alt="..." mywidth="clamp(1.75rem, 3vw, 3rem)" myheight="auto" width={10} height={100}/>
                           </Flex>
                         </Container>
                     </Flex>

@@ -103,6 +103,7 @@ export const Nav = styled.nav`
         background: none;
         transform: none;
         width: unset;
+        padding:0;
         &::after{
             content: none;
         }

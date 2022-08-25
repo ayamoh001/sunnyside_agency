@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     html,
     body {
         scroll-behavior: smooth;
-        background-color: var(--clr-white);
+        background-color: var(--clr-very-dark-desaturated-blue);
         font-size: 18px;
     }
 

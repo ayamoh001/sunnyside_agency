@@ -17,6 +17,9 @@ export default function Home() {
         <title>Frontend Mentor | Sunnyside agency landing page</title>
         <meta name="description" content="Next js with styled components" />
         <link rel="icon" href="/images/favicon-32x32.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet" />
       </Head>
       
       <GlobalStyle />

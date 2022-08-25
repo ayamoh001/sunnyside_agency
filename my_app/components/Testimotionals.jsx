@@ -21,7 +21,7 @@ const Testimotionals = () => {
   return (
     <section>
       <Bg>
-        <Container padding="4rem 1rem" lgpadding="12vw 10vw">
+        <Container padding="4rem 1rem" lgpadding="clamp(2rem, 12vw, 8rem) clamp(2rem, 10vw, 8rem)">
           <Hn as="h3" size="1rem" padding="0 0 4rem 0"  textTransform="uppercase" letterSpacing=".25rem" font="Fraunces" color="var(--clr-grayish-blue)">Client testimonials</Hn>
           <Flex gap="3rem" lgdirection="row">
 
