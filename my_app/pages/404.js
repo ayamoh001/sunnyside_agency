@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { useState } from 'react'
-import { MyHeader, MyImage, Flex, Container, FlowContent, Relative, Nav, Ul } from "../styles/layout.js"
-import { Hn } from "../styles/typography.js" 
-import { ContactBtn, Bars } from "../styles/custom.js"
+import { MyHeader, MyImage, Flex, Container, FlowContent, Relative, Nav, Ul } from "../styles/layout.styled.js"
+import { Hn } from "../styles/typography.styled.js" 
+import { ContactBtn, Bars } from "../styles/custom.styled.js"
 import Footer from "../components/Footer"
-import {GlobalStyle} from "../styles/globals"
+import {GlobalStyle} from "../styles/globals.styled"
 
 const Error = () =>{
     const [isOpen, setIsOpen] = useState(false)

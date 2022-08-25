@@ -7,7 +7,7 @@ export const Container = styled.div`
     max-width: ${({maxWidth}) => (maxWidth ? maxWidth : "1440px")};
     width: ${({width}) => (width ? width : "auto")};
     height: ${({height}) => (height ? height : "auto")};
-    @media screen and (min-width:426px){
+    @media screen and (min-width:800px){
         padding: ${({lgpadding, padding}) => (lgpadding ? lgpadding : padding)};
         margin: ${({lgmargin, margin}) => lgmargin ? lgmargin : "0 auto"};
         width: ${({width, lgwidth }) => (lgwidth ? lgwidth : width)};
@@ -17,7 +17,7 @@ export const Container = styled.div`
 export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(${({count}) => (count ? count : 1)},1fr);
-    @media screen and (min-width:426px){
+    @media screen and (min-width:800px){
         grid-template-columns: repeat(${({lgCount, count}) => (lgCount ? lgCount : count)},1fr);
     }
 `;
@@ -32,7 +32,7 @@ export const Flex = styled.div`
     width: ${({width}) => (width ? width : "auto")};
     color: ${({ color }) => (color ? color : "inherit")};
 
-    @media screen and (min-width:426px){
+    @media screen and (min-width:800px){
         gap: ${({lggap, gap}) => (lggap ? lggap : gap)};
         flex-direction: ${({lgdirection, direction}) => (lgdirection ? lgdirection : direction)}${({lgreverse}) => lgreverse && "-reverse"};
         justify-content: ${({justify, lgjustify}) => (lgjustify ? lgjustify : justify)};
@@ -59,20 +59,22 @@ export const Bg = styled.div`
     background: ${({ bg }) => (bg ? bg : "#fff")};
 `;
 export const MyImage = styled(Image)`
-    width: ${(props) => (props.width ? props.width + "%" : "auto")};
-    height: ${(props) => (props.height ? props.height + "%" : "auto")};
-    padding: ${(props) => (props.padding ? props.padding : "0")};
-    margin: ${(props) => (props.margin ? props.margin : "0")};
+    width: ${({mywidth}) => (mywidth ? mywidth : "auto")};
+    height: ${({myheight}) => (myheight ? myheight : "auto")};
+    padding: ${({padding}) => (padding ? padding : "0")};
+    margin: ${({margin}) => (margin ? margin : "0")};
     border-radius: ${({borderradius}) => borderradius ? borderradius : "unset"};
     display: ${({display}) => display ? display : "block"};
 
-    @media screen and (min-width:427px){
+    @media screen and (min-width:800px){
         display: ${({lgdisplay}) => lgdisplay ? lgdisplay : "block"};
     }
 `;
 export const Nav = styled.nav`
     display: ${(props) => (props.open ? "flex" : "none")};
+    gap:2rem;
     width: calc(100% - 3rem);
+    padding: 2rem;
     position: absolute;
     top: 6rem;
     left: 50%;
@@ -94,8 +96,9 @@ export const Nav = styled.nav`
         transform: translateY(-100%);
     }
 
-    @media screen and (min-width:427px){
+    @media screen and (min-width:800px){
         display: flex;
+        flex-direction: row;
         position: static;
         background: none;
         transform: none;
@@ -113,11 +116,10 @@ export const Ul = styled.ul`
     gap: ${(props) => (props.gap ? props.gap : "0")};
     list-style: none;
     gap: 1.25rem;
-    padding: 2rem;
     li {
         color: var(--clr-grayish-blue);
     }
-    @media screen and (min-width:427px){
+    @media screen and (min-width:800px){
         flex-direction: row;
         padding:0;
         gap:3rem;
@@ -134,7 +136,7 @@ export const MyHeader = styled.div`
     padding: ${(props) => (props.padding ? props.padding : "0")};
     width: ${(props) => (props.width ? props.width : "auto")};
     height: ${(props) => (props.height ? props.height : "auto")};
-    @media screen and (min-width:426px){
+    @media screen and (min-width:800px){
         width: ${({width, lgwidth }) => (lgwidth ? lgwidth : width)};
         height: ${({height, lgheight }) => (lgheight ? lgheight : height)};
     }

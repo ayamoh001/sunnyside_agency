@@ -9,7 +9,7 @@ export const Text = styled.p`
     color: ${({ color }) => (color ? color : "inherit")};
     line-height: ${({ lineheight }) => (lineheight ? lineheight : "normal")};
     text-transform: ${({ textTransform }) => (textTransform ? textTransform : "none")};
-    @media screen and (min-width:426px){
+    @media screen and (min-width:800px){
         justify-content: ${({justify, lgjustify}) => (lgjustify ? lgjustify : justify)};
         text-align: ${({align, lgalign}) => (lgalign ? lgalign : align)};
         font-size: ${({ lgsize, size }) => (lgsize ? lgsize : size)};
@@ -32,7 +32,7 @@ export const Hn = styled.h1`
     font-weight: ${({weight}) => weight ? weight : "600"};
     padding: ${({padding}) => padding ? padding : "0"};
     text-transform: ${({ textTransform }) => (textTransform ? textTransform : "none")};
-    @media screen and (min-width:426px){
+    @media screen and (min-width:800px){
         font-size: ${({ lgsize, size }) => (lgsize ? lgsize : size)};
         text-align: ${({align, lgalign}) => (lgalign ? lgalign : align)};
     }

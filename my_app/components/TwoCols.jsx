@@ -1,14 +1,14 @@
-import { MyImage, Flex, Container, FlowContent, Relative } from "../styles/layout.js"
-import { Hn, Text } from "../styles/typography.js"
+import { MyImage, Flex, Container, FlowContent, Relative } from "../styles/layout.styled.js"
+import { Hn, Text } from "../styles/typography.styled.js"
 
 const Col = ({img, lgImg, title, text}) => {
   return (
     <Container width="100%" lgwidth="50%">
       <Relative>
-          <MyImage display="block" lgdisplay="none" src={img} alt="..." width={100} height={0} quality={100}/>
-          <MyImage display="none" lgdisplay="block" src={lgImg} alt="..." width={100} height={0} quality={100}/>
+          <MyImage display="block" lgdisplay="none" src={img} alt="..." mywidth="100%" myheight="auto" width={1440/2} height={600}/>
+          <MyImage display="none" lgdisplay="block" src={lgImg} alt="..." mywidth="100%" myheight="auto" width={1440/2} height={600}/>
           <FlowContent height="auto" bottom="0" >
-              <Container padding="3rem 1.5rem" lgpadding="4vw 14vw">
+              <Container padding="3rem 1.5rem" lgpadding="clamp(1rem,4vw,4rem) clamp(7rem,10vw,10rem)">
                 <Hn as="h3" size="1.5rem"
                 color="var(--clr-dark-desaturated-cyan)" 
                 font="fraunces" 

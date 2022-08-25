@@ -1,5 +1,5 @@
-import { MyImage, Flex, Container, Bg } from "../styles/layout"
-import { Hn, Text} from "../styles/typography"
+import { MyImage, Flex, Container, Bg } from "../styles/layout.styled"
+import { Hn, Text} from "../styles/typography.styled"
 
 
 const ClientCard = ({img, text, name, position}) =>{
@@ -21,7 +21,7 @@ const Testimotionals = () => {
   return (
     <section>
       <Bg>
-        <Container padding="4rem 1rem" lgpadding="10vw">
+        <Container padding="4rem 1rem" lgpadding="12vw 10vw">
           <Hn as="h3" size="1rem" padding="0 0 4rem 0"  textTransform="uppercase" letterSpacing=".25rem" font="Fraunces" color="var(--clr-grayish-blue)">Client testimonials</Hn>
           <Flex gap="3rem" lgdirection="row">
 

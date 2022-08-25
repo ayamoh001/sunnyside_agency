@@ -1,13 +1,13 @@
-import { MyImage, Grid } from "../styles/layout"
+import { MyImage, Grid } from "../styles/layout.styled"
 
 const FourCols = () => {
   return (
     <section>
       <Grid count={2} lgCount={4}>
-        <MyImage src="/images/mobile/image-gallery-milkbottles.jpg" alt="..." width={100} height={100} quality={100}/>
-        <MyImage src="/images/mobile/image-gallery-orange.jpg" alt="..." width={100} height={100} quality={100}/>
-        <MyImage src="/images/mobile/image-gallery-cone.jpg" alt="..." width={100} height={100} quality={100}/>
-        <MyImage src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="..." width={100} height={100} quality={100}/>
+        <MyImage src="/images/mobile/image-gallery-milkbottles.jpg" alt="..."  mywidth="100%" myheight="100%" width={1440/4} height={360}/>
+        <MyImage src="/images/mobile/image-gallery-orange.jpg" alt="..."  mywidth="100%" myheight="100%" width={1440/4} height={360}/>
+        <MyImage src="/images/mobile/image-gallery-cone.jpg" alt="..."  mywidth="100%" myheight="100%" width={1440/4} height={360}/>
+        <MyImage src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="..."  mywidth="100%" myheight="100%" width={1440/4} height={360}/>
       </Grid>
     </section>
   )

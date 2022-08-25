@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
-import { GlobalStyle } from '../styles/globals'
+import { GlobalStyle } from '../styles/globals.styled'
+import { Container } from "../styles/layout.styled"
 
 import Header from "../components/Header.jsx"
 import ReversedCols from "../components/ReversedCols.jsx"
@@ -19,14 +20,14 @@ export default function Home() {
       </Head>
       
       <GlobalStyle />
-      <main > 
+      <Container as="main" > 
         <Header />
         <ReversedCols />
         <TwoCols />
         <Testimotionals />
         <FourCols />
         <Footer />
-      </main>
+      </Container>
     </>
   )
 }

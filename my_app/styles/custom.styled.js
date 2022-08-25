@@ -10,7 +10,7 @@ export const Bars = styled.button`
     border: none;
     cursor: pointer;
     border-radius: 100vmax;
-    @media screen and (min-width:427px){
+    @media screen and (min-width:800px){
         display:none;
     }
     
@@ -57,7 +57,7 @@ export const ContactBtn = styled.button`
     padding: 1rem 2rem;
     font-size: 1rem;
     font-family: var(--ff-fraunces);
-    @media screen and (min-width:427px){
+    @media screen and (min-width:800px){
         background-color: var(--clr-white);
     }
     &:hover{

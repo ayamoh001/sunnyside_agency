@@ -4,7 +4,6 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     images: {
-        layoutRaw: true,
         allowFutureImage: true
     }
   },
